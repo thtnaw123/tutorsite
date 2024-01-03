@@ -1,0 +1,39 @@
+/* :root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  font-synthesis: none;
+
+}
+ */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-family: "Manrope", sans-serif;
+
+  --gradient-text: linear-gradient(89.97deg, #ae67fa 1.84%, #f49867 102.67%);
+  --gradient-bar: linear-gradient(103.22deg, #ae67fa -13.86%, #f49867 99.55%);
+
+  --color-bg: #fff;
+  --color-footer: #031b34;
+  --color-blog: #042c54;
+  --color-text: #000;
+
+  --color-spantext: #20b9d4;
+  --color-hometext: #ff4f4d;
+}
+
+body {
+  background: var(--color-bg);
+  color: var(--color-text);
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}

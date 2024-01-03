@@ -1,0 +1,35 @@
+* {
+  text-align: center;
+}
+.footer-container {
+  display: flex;
+  min-height: 30vh;
+  justify-content: space-around;
+  align-items: center;
+}
+.link-group {
+  /* border: 1px solid red; */
+  text-align: start;
+}
+.link-group p a {
+  font-size: 2.3vmin;
+  font-weight: 400;
+  line-height: normal;
+  color: var(--color-text);
+}
+
+.link-group p a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 550px) {
+  .footer-container {
+    width: 100%;
+    flex-direction: column;
+    /* font-size: 2.7rem; */
+  }
+
+  .link-group p a {
+    font-size: 3vmin;
+  }
+}

@@ -1,0 +1,151 @@
+/* .navbar-container {
+  font-size: 1.2rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+  height: auto;
+}
+
+
+
+@media (max-width: 550px) {
+  .navbar-links {
+    display: none;
+  }
+
+  .navbar-mobile-menu-container {
+    background-color: var(--color-spantext);
+    width: 100dvw;
+    position: absolute;
+    top: 10px;
+    right: 100px;
+  }
+
+  .navbar-mobile-menu {
+    display: flex;
+  }
+} */
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+.navbar-container {
+  border-bottom: 1px solid #e2e8f0;
+  font-size: 62.5%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.color-mobile-nav-menu {
+  background: #43dddd;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.5rem;
+}
+.nav-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-item {
+  margin-left: 5rem;
+}
+
+.nav-link {
+  color: var(--color-text);
+  font-size: 1.3rem;
+  font-weight: 550;
+}
+
+.nav-link:hover {
+  color: #482ff7;
+  text-decoration: wavy;
+}
+
+.nav-logo {
+  font-size: 2.1rem;
+  font-weight: 500;
+  color: var(--color-text);
+}
+
+.nav-logo span {
+  color: var(--color-spantext);
+}
+.hamburger {
+  display: none;
+}
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: #101010;
+}
+.navbar button {
+  background: none;
+  outline: none;
+  border: none;
+}
+@media only screen and (max-width: 950px) {
+  .nav-menu {
+    position: fixed;
+    left: -200%;
+    top: 3.6rem;
+    flex-direction: column;
+    background-color: #fff;
+    opacity: 1.8;
+    width: 100%;
+    text-align: center;
+    transition: 0.3s;
+    box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+  }
+  .color-mobile-nav-menu {
+    background-color: var(--color-spantext);
+  }
+  .nav-link {
+    color: var(--color-text);
+    font-size: 1.5rem;
+    font-weight: 700;
+  }
+
+  .nav-menu.active {
+    left: 0;
+  }
+
+  .nav-item {
+    margin: 1rem 4.5rem 1rem 0;
+    /* border: 1px solid red; */
+  }
+
+  .hamburger {
+    display: block;
+    cursor: pointer;
+  }
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+}

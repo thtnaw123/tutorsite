@@ -1,0 +1,128 @@
+.contact-container {
+  min-height: 70vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  /* background-color: var(--color-spantext); */
+  background: #43dddd;
+}
+
+.contact-gif {
+  box-shadow: 0px 7px 5px rgba(0, 0, 0, 0.11);
+}
+.contact-gif img {
+  width: 20rem;
+  height: auto;
+
+  /* border: 1px solid red; */
+}
+
+form {
+  min-width: 35rem;
+
+  text-align: center;
+  .title {
+    font-size: 2.5rem;
+  }
+
+  .form-control {
+    background-color: #f2f6f8;
+    border-radius: 2rem;
+    border: none;
+    box-shadow: 0px 7px 5px rgba(0, 0, 0, 0.11);
+    margin: 10px 0;
+
+    &.thick {
+      height: 3.3rem;
+      padding: 0.5rem 3.5rem;
+    }
+
+    &:focus {
+      background-color: #f2f6f8;
+      border: none;
+      box-shadow: 0px 7px 5px rgba(0, 0, 0, 0.11);
+    }
+  }
+
+  .message .form-control {
+    padding: 0.5rem 3.1rem;
+  }
+
+  ::placeholder {
+    font-weight: 600;
+    font-size: 1.1rem;
+    color: #60a2b3;
+  }
+
+  input,
+  textarea {
+    color: #60a2b3;
+    font-size: 1.1rem;
+  }
+
+  .icon {
+    color: #57565c;
+    height: 1.3rem;
+    position: absolute;
+    left: 1.5rem;
+    top: 1.1rem;
+  }
+}
+
+.contact-btn {
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 1.1rem;
+  height: 2.5rem;
+  line-height: 2.5rem;
+  padding: 0 3rem;
+  border: none;
+  border-radius: 3rem;
+  background-image: linear-gradient(131deg, #4093ff, #ff923c, #ff923c, #3cd1ff);
+  background-size: 300% 100%;
+  transition: all 0.3s ease-in-out;
+}
+
+.contact-btn:hover:enabled {
+  box-shadow: 0 0.5em 0.5em -0.4em #ff923cba;
+  background-size: 100% 100%;
+  transform: translateY(-0.15em);
+}
+
+.socials {
+  display: flex;
+  justify-content: space-around;
+}
+
+@media (max-width: 800px) {
+  .contact-container {
+    width: 100%;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 550px) {
+  .contact-container {
+    width: 100%;
+    flex-direction: column;
+  }
+  form {
+    min-width: 80dvw;
+
+    .form-control {
+      &.thick {
+        height: 3.3rem;
+        padding: 0.5rem 1.5rem;
+      }
+
+      &:focus {
+        background-color: #f2f6f8;
+        border: none;
+        box-shadow: 0px 7px 5px rgba(0, 0, 0, 0.11);
+      }
+    }
+    .message .form-control {
+      padding: 0.5rem 1.1rem;
+    }
+  }
+}

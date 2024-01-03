@@ -1,0 +1,69 @@
+.service-container {
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 80%;
+  margin-left: 150px;
+}
+
+.unit-service {
+  border-top: 0.1px solid black;
+  max-width: 18.8rem;
+  min-height: 19.5rem;
+  background: var(--color-bg);
+  border-radius: 20px;
+  margin: 30px 10px;
+  cursor: pointer;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.unit-service:hover {
+  background: rgb(157, 192, 202);
+}
+
+.unit-service-header {
+  text-align: center;
+}
+
+.unit-service-content {
+  padding: 0 20px;
+  text-align: center;
+  font-size: 2.5vmin;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.unit-service-btn {
+  text-align: center;
+}
+.unit-service-btn button {
+  font-size: 0.8rem;
+  border-radius: 7px;
+  /* width: 35%;   */
+  min-width: 25%;
+  padding: 0.7em;
+  text-align: center;
+  border: none;
+  outline: none;
+  background: var(--color-spantext);
+  color: #fff;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 950px) {
+  .service-container {
+    margin-left: 0;
+    margin-right: 0;
+    width: 100%;
+  }
+  .unit-service {
+    max-width: 16rem;
+    min-height: 13 rem;
+  }
+  .unit-service-content {
+    padding: 0;
+    font-size: 1.2rem;
+  }
+}
